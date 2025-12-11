@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>smartgrow-pwa</title>
+
+    <!-- ← Permanent safe fix: load Vite-generated CSS file directly so Tailwind utilities apply -->
+    <!-- Vite will still inject HMR styles; this link ensures the generated stylesheet is present in the page -->
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
     <div id="root"></div>
